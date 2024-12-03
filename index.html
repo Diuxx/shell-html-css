@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="shell">
+        <div class="shell-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+        </div>
+        <div class="shell-body">
+            <div class="line">
+                <span class="prompt">user@machine:~$</span> ls
+            </div>
+            <div class="line">
+                <span class="output">Desktop Documents Downloads</span>
+            </div>
+            <div class="line">
+                <span class="prompt">user@machine:~$</span> echo "Hello, World!"
+            </div>
+            <div class="line">
+                <span class="output">Hello, World!</span>
+            </div>
+            <div class="line">
+                <span class="prompt">user@machine:~$</span> <!-- Blinking cursor -->
+                <span class="cursor">|</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    background-color: #2e2e2e;
+    color: #dcdcdc;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.shell {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.shell-header {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #2b2b2b;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.red {
+    background-color: #ff5f56;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+}
+
+.green {
+    background-color: #27c93f;
+}
+
+.shell-body {
+    padding: 10px 15px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.prompt {
+    color: #4caf50;
+    margin-right: 8px;
+}
+
+.output {
+    color: #dcdcdc;
+}
+
+.cursor {
+    background-color: #dcdcdc;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
